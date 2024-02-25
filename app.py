@@ -1,10 +1,10 @@
 from flask import Flask, render_template, Response, jsonify
-#from webcamtest import pose_estimate,pose_estimate_secure
-#import mediapipe as mp
-#import cv2
+from webcamtest import pose_estimate,pose_estimate_secure
+import mediapipe as mp
+import cv2
 
 app = Flask(__name__)
-#camera = cv2.VideoCapture(1)
+camera = cv2.VideoCapture(1)
 
 app.debug = True
 
